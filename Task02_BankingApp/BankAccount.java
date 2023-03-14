@@ -49,4 +49,19 @@ public class BankAccount {
     public void setAccountType(AccountType accountType) {
         this.accountType = accountType;
     }
+
+    public boolean deposit(double amount) {
+        this.balance += amount;
+        return true;
+    }
+
+    public boolean withdraw(double amount) {
+
+        if (this.balance < amount) {
+            System.out.println("Cannot withdraw the amount. The amount should be less than account balance");
+            return false;
+        }
+        this.balance -= amount;
+        return true;
+    }
 }
