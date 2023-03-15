@@ -13,15 +13,6 @@ public class Transaction {
     private double amount;
     private TransactionType transactionType;
 
-    private long accountNumber;
-
-    public long getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(long accountNumber) {
-        this.accountNumber = accountNumber;
-    }
 
     public Transaction(int id, LocalDateTime date, double amount, TransactionType transactionType) {
         this.id = id;

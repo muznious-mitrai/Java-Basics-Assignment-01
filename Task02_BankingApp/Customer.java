@@ -11,6 +11,7 @@ public class Customer {
         this.name = name;
         this.emailAddress = emailAddress;
         this.phoneNumber = phoneNumber;
+        System.out.println("Customer Created Successfully!\nCustomer ID: " + id);
     }
 
     public int getId(){
