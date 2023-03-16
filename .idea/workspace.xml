@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fff7a89-b7b0-45c4-a97d-ed9e8657c5f8" name="Changes" comment="Modified">
+    <list default="true" id="0fff7a89-b7b0-45c4-a97d-ed9e8657c5f8" name="Changes" comment="Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task02_BankingApp/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task02_BankingApp/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task02_BankingApp/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task02_BankingApp/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task02_BankingApp/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task02_BankingApp/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task02_BankingApp/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task02_BankingApp/Transaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -37,10 +35,34 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Bank">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Task03_OOP" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Task05_SortStrings.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task04_CharCount.App" />
+      <module name="Java Basics Assignment 01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task05_SortStrings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Bank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task02_BankingApp.Bank" />
       <module name="Java Basics Assignment 01" />
@@ -50,26 +72,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BooksTestDrive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task01.BooksTestDrive" />
-      <module name="Java Basics Assignment 01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Task01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercise1c" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exercise1c" />
-      <module name="Java Basics Assignment 01" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -87,12 +89,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task01.Exercise1c" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task01.Exercise1c" />
+    <configuration name="Inventory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task03_OOP.Inventory" />
       <module name="Java Basics Assignment 01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task01.*" />
+          <option name="PATTERN" value="Task03_OOP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task05_SortStrings.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task05_SortStrings.App" />
+      <module name="Java Basics Assignment 01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task05_SortStrings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task05_SortStrings.App" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Inventory" />
         <item itemvalue="Application.Bank" />
         <item itemvalue="Application.Hobbits" />
-        <item itemvalue="Application.BooksTestDrive" />
-        <item itemvalue="Application.Task01.Exercise1c" />
-        <item itemvalue="Application.Exercise1c" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678815630191</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated">
+      <created>1678886401810</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678886401810</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +164,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
 </project>

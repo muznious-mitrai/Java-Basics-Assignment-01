@@ -65,17 +65,9 @@ public class Bank {
     }
 
     void addDummyData() {
-        this.customers.addAll(Arrays.asList(
-                new Customer(1000, "Gihan Liyanage", "gihan@gmail.com", "+94710854933"),
-                new Customer(1001, "Muzny M", "muzny@gmail.com", "+94710230983"),
-                new Customer(1002, "Iona Norman", "iona@gmail.com", "+94710450983"))
-        );
+        this.customers.addAll(Arrays.asList(new Customer(1000, "Gihan Liyanage", "gihan@gmail.com", "+94710854933"), new Customer(1001, "Muzny M", "muzny@gmail.com", "+94710230983"), new Customer(1002, "Iona Norman", "iona@gmail.com", "+94710450983")));
 
-        this.bankAccounts.putAll(Map.of(
-                5051000001L, new BankAccount(5051000001L, "Anna Reynolds", 5000, AccountType.CURRENT),
-                5051001001L, new BankAccount(5051001001L, "Bianca Oliver", 3000, AccountType.SAVINGS),
-                5051002001L, new BankAccount(5051002001L, "Iona Norman", 8500, AccountType.FIXED_DEPOSIT))
-        );
+        this.bankAccounts.putAll(Map.of(5051000001L, new BankAccount(5051000001L, "Anna Reynolds", 5000, AccountType.CURRENT), 5051001001L, new BankAccount(5051001001L, "Bianca Oliver", 3000, AccountType.SAVINGS), 5051002001L, new BankAccount(5051002001L, "Iona Norman", 8500, AccountType.FIXED_DEPOSIT)));
     }
 
     public void addCustomer(Customer customer) {
@@ -100,11 +92,7 @@ public class Bank {
         System.out.println("ID\t\t|\tName\t|\tEmailAddress\t|\tPhoneNumber");
         System.out.println("----------------------------------------------------------");
         for (Customer customer : this.customers) {
-            System.out.println(customer.getId()
-                    + "\t|\t" + customer.getName()
-                    + "\t|\t" + customer.getEmailAddress()
-                    + "\t|\t" + customer.getPhoneNumber()
-            );
+            System.out.println(customer.getId() + "\t|\t" + customer.getName() + "\t|\t" + customer.getEmailAddress() + "\t|\t" + customer.getPhoneNumber());
         }
         System.out.println("----------------------------------------------------------");
     }
@@ -114,31 +102,22 @@ public class Bank {
         System.out.println("----------------------------------------------------------");
         System.out.println("Acc#\t|\tAccountName\t|\tBalance\t|\tAccountType");
         System.out.println("----------------------------------------------------------");
-        this.bankAccounts.values().forEach(
-                bankAccount -> System.out.println(bankAccount.getAccountNumber()
-                        + "\t|\t" + bankAccount.getAccountName()
-                        + "\t|\t" + bankAccount.getBalance()
-                        + "\t|\t" + bankAccount.getAccountType()
-                )
-        );
+        this.bankAccounts.values().forEach(bankAccount -> System.out.println(bankAccount.getAccountNumber() + "\t|\t" + bankAccount.getAccountName() + "\t|\t" + bankAccount.getBalance() + "\t|\t" + bankAccount.getAccountType()));
         System.out.println("----------------------------------------------------------");
     }
 
-    public void displayTransactions(Scanner scanner) throws Exception{
+    public void displayTransactions(Scanner scanner) throws Exception {
 
+        System.out.println("Please provide Bank Account details");
         long accNumber = getLongInput(scanner, "Account Number:");
         BankAccount bankAccount = getBankAccountByAccountNumber(scanner, accNumber);
 
-        System.out.println("\nTRANSACTIONS \t\tAccount Number: "+bankAccount.getAccountNumber());
+        System.out.println("\nTRANSACTIONS \t\tAccount Number: " + bankAccount.getAccountNumber());
         System.out.println("-------------------------------------------------------------------------------------");
         System.out.println("TrxId#\t|\tTransaction Date\t|\tAmount\t|\tTransactionType");
         System.out.println("-------------------------------------------------------------------------------------");
         bankAccount.getTransactions().forEach(transaction -> {
-            System.out.println(transaction.getId()
-                    + "\t|\t" + transaction.getDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
-                    + "\t|\t" + transaction.getAmount()
-                    + "\t|\t" + transaction.getTransactionType()
-            );
+            System.out.println(transaction.getId() + "\t|\t" + transaction.getDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) + "\t|\t" + transaction.getAmount() + "\t|\t" + transaction.getTransactionType());
         });
         System.out.println("-------------------------------------------------------------------------------------");
         scanner.nextLine();
@@ -214,7 +193,6 @@ public class Bank {
         this.addBankAccount(bankAccount);
     }
 
-
     public BankAccount getBankAccountByAccountNumber(Scanner scanner, long accNumber) throws Exception {
         if (!this.bankAccounts.containsKey(accNumber)) {
             scanner.nextLine();
@@ -263,7 +241,7 @@ public class Bank {
         return txType;
     }
 
-    public void makeTransactions(Scanner scanner) throws Exception{
+    public void makeTransactions(Scanner scanner) throws Exception {
 
         System.out.println("Please provide transaction details");
 
