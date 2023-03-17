@@ -1,10 +1,6 @@
 package Task06_TrainApp;
 
-import Task05_SortStrings.Station;
-
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class App {
 

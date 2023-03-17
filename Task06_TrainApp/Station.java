@@ -1,4 +1,4 @@
-package Task05_SortStrings;
+package Task06_TrainApp;
 
 public class Station {
     private String code;

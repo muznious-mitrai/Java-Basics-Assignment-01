@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fff7a89-b7b0-45c4-a97d-ed9e8657c5f8" name="Changes" comment="Updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task06_TrainApp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task06_TrainApp/App.java" afterDir="false" />
-    </list>
+    <list default="true" id="0fff7a89-b7b0-45c4-a97d-ed9e8657c5f8" name="Changes" comment="Task 06 done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +52,7 @@
       <module name="Java Basics Assignment 01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task05_SortStrings.*" />
+          <option name="PATTERN" value="Task06_TrainApp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,7 +91,7 @@
       <module name="Java Basics Assignment 01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task05_SortStrings.*" />
+          <option name="PATTERN" value="Task06_TrainApp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678886401810</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Task 06 done">
+      <created>1679049284057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679049284057</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modified" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Task 06 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 06 done" />
   </component>
 </project>
