@@ -49,7 +49,7 @@ public class Inventory {
             System.out.print("Enter Model: ");
             String model = scanner.nextLine();
 
-            if(make.equalsIgnoreCase("99") || model.equalsIgnoreCase("99")){
+            if (make.equalsIgnoreCase("99") || model.equalsIgnoreCase("99")) {
                 scanner.close();
                 System.exit(0);
             }
@@ -70,6 +70,15 @@ public class Inventory {
     }
 
     public double getAveragePrice() {
+
+        //List<Vehicle> filteredVehicles = new ArrayList<>();
+        //double total = 0;
+        //for (Vehicle v : getVehicles()) {
+        //    total += v.getPrice();
+        //}
+        //return total / getVehicles().size();
+
+        // Using Stream API
         return getVehicles()
                 .stream()
                 .mapToDouble(Vehicle::getPrice)
@@ -79,16 +88,51 @@ public class Inventory {
 
     public List<Vehicle> searchByMakeAndModel(String make, String model) {
 
+        //List<Vehicle> filteredVehicles = new ArrayList<>();
+        //for (Vehicle vehicle : getVehicles()) {
+        //
+        //    // filter by make
+        //    if (!make.isBlank()
+        //            && model.isBlank()
+        //            && vehicle.getMake().equalsIgnoreCase(make)
+        //    ) {
+        //        filteredVehicles.add(vehicle);
+        //    }
+        //
+        //    // filter by model
+        //    if (make.isBlank()
+        //            && !model.isBlank()
+        //            && vehicle.getModel().equalsIgnoreCase(model)
+        //    ) {
+        //        filteredVehicles.add(vehicle);
+        //    }
+        //
+        //    // filter by make and model
+        //    if (!make.isBlank()
+        //            && !model.isBlank()
+        //            && vehicle.getMake().equalsIgnoreCase(make)
+        //            && vehicle.getModel().equalsIgnoreCase(model)
+        //    ) {
+        //        filteredVehicles.add(vehicle);
+        //    }
+        //}
+        //return filteredVehicles;
+
+
+        // Using Stream API
         Predicate<Vehicle> predicate = vehicle -> true;
 
+        // filter by make
         if (!make.isBlank() && model.isBlank()) {
             predicate = vehicle -> vehicle.getMake().equalsIgnoreCase(make);
         }
 
+        // filter by model
         if (make.isBlank() && !model.isBlank()) {
             predicate = vehicle -> vehicle.getModel().equalsIgnoreCase(model);
         }
 
+        // filter by make and model
         if (!make.isBlank() && !model.isBlank()) {
             predicate = vehicle -> vehicle.getMake().equalsIgnoreCase(make)
                     &&

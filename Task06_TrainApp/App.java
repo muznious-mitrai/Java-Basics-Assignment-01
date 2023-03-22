@@ -42,10 +42,10 @@ public class App {
                 app.validateStations(iStart, iEnd);
 
                 System.out.println("\n----------------------------------------------------");
-                ;
+
                 System.out.println("You will go through following stations");
                 System.out.println("----------------------------------------------------");
-                ;
+
                 app.getAffectedStations(sList, iStart, iEnd).stream()
                         .forEach(station -> System.out.println(station.getCode() + " - " + station.getName()));
                 System.out.println("----------------------------------------------------");
