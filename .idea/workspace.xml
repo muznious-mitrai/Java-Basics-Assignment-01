@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0fff7a89-b7b0-45c4-a97d-ed9e8657c5f8" name="Changes" comment="Task 06 done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task03_OOP/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task03_OOP/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task06_TrainApp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task06_TrainApp/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task02_BankingApp/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task02_BankingApp/Bank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
       <recent name="Task03_OOP" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Inventory">
+  <component name="RunManager" selected="Application.Bank">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task04_CharCount.App" />
       <module name="Java Basics Assignment 01" />
@@ -118,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bank" />
         <item itemvalue="Application.Inventory" />
         <item itemvalue="Application.Task06_TrainApp.App" />
         <item itemvalue="Application.Task05_SortStrings.App" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.Bank" />
       </list>
     </recent_temporary>
   </component>

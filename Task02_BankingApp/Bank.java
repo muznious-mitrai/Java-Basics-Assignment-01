@@ -30,15 +30,12 @@ public class Bank {
             System.out.println("[99] - Exit");
             try {
                 int option = bank.getIntegerInput(scanner, "Option:");
-                scanner.nextLine(); // this will return carriage return /r/n only.
                 switch (option) {
                     case 1: // create customer
                         bank.createCustomer(scanner);
-                        scanner.nextLine(); // clear buffer
                         break;
                     case 2: // make transactions
                         bank.makeTransactions(scanner);
-                        scanner.nextLine(); // clear buffer
                         break;
                     case 3: // display customers
                         bank.displayCustomers();
@@ -120,7 +117,6 @@ public class Bank {
             System.out.println(transaction.getId() + "\t|\t" + transaction.getDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) + "\t|\t" + transaction.getAmount() + "\t|\t" + transaction.getTransactionType());
         });
         System.out.println("-------------------------------------------------------------------------------------");
-        scanner.nextLine();
     }
 
     public int getIntegerInput(Scanner scanner, String prompt) {
@@ -129,7 +125,9 @@ public class Bank {
             System.out.println("Invalid Input.\nPlease enter correct " + prompt);
             scanner.nextLine();
         }
-        return scanner.nextInt();
+        int value = scanner.nextInt();
+        scanner.nextLine(); // this will return carriage return /r/n only.
+        return value;
     }
 
     public long getLongInput(Scanner scanner, String prompt) {
@@ -138,16 +136,20 @@ public class Bank {
             System.out.println("Invalid Input.\nPlease enter correct " + prompt);
             scanner.nextLine();
         }
-        return scanner.nextLong();
+        long value = scanner.nextLong();
+        scanner.nextLine();
+        return value;
     }
 
     public double getDoubleInput(Scanner scanner, String prompt) {
-        System.out.println(prompt);
+         System.out.println(prompt);
         while (!scanner.hasNextDouble()) {
             System.out.println("Invalid Input.\nPlease enter correct " + prompt);
             scanner.nextLine();
         }
-        return scanner.nextDouble();
+        double value = scanner.nextDouble();
+        scanner.nextLine();
+        return value;
     }
 
     public String getRegexInput(Scanner scanner, String regex, String prompt) {
@@ -195,7 +197,6 @@ public class Bank {
 
     public BankAccount getBankAccountByAccountNumber(Scanner scanner, long accNumber) throws Exception {
         if (!this.bankAccounts.containsKey(accNumber)) {
-            scanner.nextLine();
             throw new Exception("Account Number not found. Please check and try again");
         }
         return bankAccounts.get(accNumber);
@@ -248,7 +249,6 @@ public class Bank {
         long accNumber = getLongInput(scanner, "Account Number:");
         BankAccount bankAccount = getBankAccountByAccountNumber(scanner, accNumber);
         double txAmount = getDoubleInput(scanner, "Amount:");
-
         TransactionType txType = getTransactionTypeFromInput(scanner);
         switch (txType) {
             case DEPOSIT:
